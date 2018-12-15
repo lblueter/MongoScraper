@@ -1,6 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var logger = require("morgan");
+// var logger = require("morgan");
 var mongoose = require("mongoose");
 
 // Our scraping tools
@@ -20,14 +20,14 @@ var app = express();
 // Configure middleware
 
 // Use morgan logger for logging requests
-app.use(logger("dev"));
+// app.use(logger("dev"));
 // Use body-parser for handling form submissions
 app.use(bodyParser.urlencoded({ extended: true }));
 // Use express.static to serve the public folder as a static directory
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/week18Populater");
+mongoose.connect("mongodb://localhost/scrape");
 
 // Routes
 
