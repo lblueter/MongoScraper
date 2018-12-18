@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Scraping With Mongoose</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <style>
       body { background-color: #F2F6D0 }
       #wrapper {
@@ -37,10 +39,9 @@
     </style>
   </head>
   <body>
-    <nav>
-      <button>articles</button>
-      <button>saved articles</button>
-      <button>scrape</button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="/articles">articles</a>
+      <a class="navbar-brand" href="/scrape">scrape</a>
     </nav>
     <div id="wrapper">
       <h1>Note Scraper</h1>
